@@ -6,7 +6,7 @@ angular.module('starter.services', [])
             var deferred = $q.defer();
             var promise = deferred.promise;
 
-            if (uname == 'user' && passw == 'secret') {
+            if (uname == 'jim' && passw == 'secret') {
                 deferred.resolve('Welcome ' + name + '!');
             } else {
                 deferred.reject('Wrong credentials.');

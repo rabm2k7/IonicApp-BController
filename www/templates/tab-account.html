@@ -1,22 +1,19 @@
 <ion-view view-title="Account">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">Dashboard</h1>
+  </ion-header-bar>
   <ion-content>
+    <div class="row">
+      <div class="col text-center">
+        <img src="../img/logo.png" class="logo" max-width="100px" width="100px">
+        <div class="title">ToBlockchain</div>
+      </div>
+    </div>
     <ion-list>
-      <ion-toggle ng-repeat="item in settingsList"
-                  ng-model="item.checked"
-                  ng-checked="item.checked"
-                  ng-change="pushNotificationChange()">
+      <ion-toggle ng-repeat="item in settingsList" ng-model="item.checked" ng-checked="item.checked" ng-change="pushNotificationChange()">
         {{ item.text }}
       </ion-toggle>
 
-      <div class="item">
-        <pre ng-bind="settingsList | json"></pre>
-      </div>
     </ion-list>
   </ion-content>
 </ion-view>
-
-    <ion-header-bar class="bar-positive">
-      <h1 class="title">Toggles</h1>
-    </ion-header-bar>
-
-    <ion-content>
